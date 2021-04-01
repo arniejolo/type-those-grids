@@ -15,13 +15,17 @@ body {
 display: grid;
 grid-templates-columns: 1fr;
 grid-template-areas:
-"header" "header" "header"
+"banner" "banner" "banner"
 "main" "main" "main"
 }
 
 header {
 
-  grid-area: header;
+  grid-area: banner;
+}
+
+p {
+  grid-area: banner;
 }
 
 figcaption, h2 {
