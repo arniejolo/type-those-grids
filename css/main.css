@@ -7,6 +7,22 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+body {
+  padding: 0;
+  margin: 0;
+
+/* mobile size */
+display: grid;
+grid-templates-columns: 1fr;
+grid-template-areas:
+"header" "header" "header"
+"main" "main" "main"
+}
+
+header {
+
+  grid-area: header;
+}
 
 figcaption, h2 {
   font-size: 1.8rem;
