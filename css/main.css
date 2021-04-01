@@ -1,8 +1,17 @@
 html {
   box-sizing: border-box;
   font-family: 'Merriweather', serif;
+  line-height: 1.5;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
+}
+
+figcaption, h2 {
+  font-size: 1.8rem;
+}
+
+p, dl {
+  font-size: 1.5rem;
 }
