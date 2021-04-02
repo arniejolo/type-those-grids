@@ -10,6 +10,7 @@ html {
 body {
   padding: 0;
   margin: 0;
+  font-size: 1.5rem;
 
 /* mobile size */
 display: grid;
@@ -19,15 +20,17 @@ grid-template-areas:
 "artemis" "rhodes" "babylon"
 }
 
-header {
-  padding: 0;
-
-  grid-area: banner;
+header h1 {
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: lighter;
+  padding: 1rem;
+  background-color: lightblue;
+  margin: 1rem;
 }
 
-h1 {
-  padding: .5em;
-  background-color: lightblue;
+.helen {
+  grid-area: banner;
 }
 
 .artemis {
