@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: 'Merriweather', serif;
+  font-family:"Merriweather", serif;
   line-height: 1.5;
 }
 
@@ -11,16 +11,20 @@ body {
   padding: 0;
   margin: 0;
 
-/* mobile size */
-display: grid;
-grid-template-columns: 1fr 1fr 1fr;
-grid-template-areas:
-"header header header"
-"main main main";
+  /* mobile size */
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "header header header"
+  "main main main";
 }
 
 header {
   grid-area: header;
+}
+
+header h1 {
+  font-weight: ligher;
 }
 
 header img {
@@ -29,4 +33,15 @@ header img {
   grid-area: header;
   grid-column: 1 / -1;
   grid-row: 1 / -1;
+}
+
+p {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
+  gap: .75rem;
 }
