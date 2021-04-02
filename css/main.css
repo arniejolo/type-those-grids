@@ -16,25 +16,17 @@ display: grid;
 grid-template-columns: 1fr 1fr 1fr;
 grid-template-areas:
 "header header header"
-"artemis rhodes babylon";
+"main main main";
 }
 
 header {
-
   grid-area: header;
 }
 
-.artemis {
-
-  grid-area: artemis;
-}
-
-.rhodes {
-
-  grid-area: rhodes;
-}
-
-.babylon {
-
-  grid-area: babylon;
+header img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-area: header;
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
 }
