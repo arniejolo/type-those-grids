@@ -24,7 +24,7 @@ header {
 }
 
 header h1 {
-  font-weight: ligher;
+  font-weight: lighter;
 }
 
 header img {
@@ -35,13 +35,8 @@ header img {
   grid-row: 1 / -1;
 }
 
-p {
-  grid-column: 1;
-  grid-row: 1;
-}
-
 main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
-  gap: .75rem;
+
+  grid-area: main;
 }
