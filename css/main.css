@@ -16,22 +16,28 @@ display: grid;
 grid-templates-columns: 1fr;
 grid-template-areas:
 "banner" "banner" "banner"
-"main" "main" "main"
+"artemis" "rhodes" "babylon"
 }
 
 header {
+  padding: 0;
 
   grid-area: banner;
 }
 
-p {
-  grid-area: banner;
+h1 {
+  padding: .5em;
+  background-color: lightblue;
 }
 
-figcaption, h2 {
-  font-size: 1.8rem;
+.artemis {
+  grid-area: artemis;
 }
 
-p, dl {
-  font-size: 1.5rem;
+.rhodes {
+  grid-area: rhodes;
+}
+
+.babylon {
+  grid-area: babylon;
 }
