@@ -14,10 +14,13 @@ body {
 
 /* mobile size */
 display: grid;
-grid-templates-columns: 1fr;
+grid-template-columns: 1fr;
 grid-template-areas:
-"banner" "banner" "banner"
-"artemis" "rhodes" "babylon"
+"header"
+"banner"
+"main 1"
+"main 2"
+"main 3"
 }
 
 header h1 {
@@ -27,6 +30,8 @@ header h1 {
   padding: 1rem;
   background-color: lightblue;
   margin: 1rem;
+
+  grid-area: header;
 }
 
 .helen {
@@ -34,13 +39,13 @@ header h1 {
 }
 
 .artemis {
-  grid-area: artemis;
+  grid-area: main 1;
 }
 
 .rhodes {
-  grid-area: rhodes;
+  grid-area: main 2;
 }
 
 .babylon {
-  grid-area: babylon;
+  grid-area: main 3;
 }
