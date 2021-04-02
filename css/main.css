@@ -13,5 +13,28 @@ body {
 
 /* mobile size */
 display: grid;
-grid-template-columns: 1fr;
+grid-template-columns: 1fr 1fr 1fr;
 grid-template-areas:
+"header header header"
+"artemis rhodes babylon";
+}
+
+header {
+
+  grid-area: header;
+}
+
+.artemis {
+
+  grid-area: artemis;
+}
+
+.rhodes {
+
+  grid-area: rhodes;
+}
+
+.babylon {
+
+  grid-area: babylon;
+}
