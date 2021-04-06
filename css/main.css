@@ -13,10 +13,12 @@ body {
 
   /* mobile size */
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
-  "header header header"
-  "aside1 aside2 aside3";
+  "header"
+  "aside1"
+  "aside2"
+  "aside3";
 }
 
 header {
@@ -55,4 +57,13 @@ main {
 .babylon {
   grid-area: aside3;
   padding: 1rem;
+}
+
+@media screen and (min-wdith: 40em) {
+
+body {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+  "header header header"
+  "aside1 aside2 aside3";
 }
