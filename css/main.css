@@ -65,6 +65,7 @@ h1 {
   font-weight: lighter;
   font-style: italic;
   font-size: 1.8rem;
+  margin: 0;
 }
 
 dt {
