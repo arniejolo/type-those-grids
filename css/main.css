@@ -21,13 +21,14 @@ main {
   "main1 main2 main3";
 }
 
-.banner-text {
-  grid-area: header:
-  alight-self: end;
-}
-
 .helen {
   grid-area: header;
+}
+
+.banner-text {
+  grid-area: header;
+  color: #fff;
+  align-self: end;
 }
 
 .artemis {
