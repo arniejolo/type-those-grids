@@ -13,10 +13,12 @@ body {
 
   /* mobile size */
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
-  "header header header"
-  "aside1 aside2 aside3";
+  "header"
+  "aside1"
+  "aside2"
+  "aside3";
 }
 
 header {
@@ -32,4 +34,17 @@ header h1 {
 .main-grid{
   background-color: pink;
   padding: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
+}
+
+.artemis {
+  grid-area: aside1;
+}
+
+.rhodes {
+  grid-area: aside2;
+}
+
+.babylon {
+  grid-area: aside3;
 }
