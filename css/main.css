@@ -57,6 +57,9 @@ main {
   grid-area: main3;
 }
 
+figure {
+  margin: 0;
+}
 h1 {
   font-weight: lighter;
   font-style: italic;
