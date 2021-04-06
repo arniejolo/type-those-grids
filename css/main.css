@@ -13,10 +13,12 @@ body {
 
   /* mobile size */
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
-  "header header header"
-  "aside1 aside2 aside3";
+  "header"
+  "aside1"
+  "aside2"
+  "aside3";
 }
 
 header {
@@ -29,29 +31,22 @@ header h1 {
   font-weight: lighter;
 }
 
-header img {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-area: header;
-  align-self: center;
-}
-
 main {
   background-color: pink;
   padding: 1rem;
 }
 
 .artemis {
-  grid-area: main1;
+  grid-area: aside1;
   padding: 1rem;
 }
 
 .rhodes {
-  grid-area: main2;
+  grid-area: aside2;
   padding: 1rem;
 }
 
 .babylon {
-  grid-area: main3;
+  grid-area: aside3;
   padding: 1rem;
 }
