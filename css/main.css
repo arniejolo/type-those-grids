@@ -15,7 +15,7 @@ img {
 main {
 
   display: grid;
-  grid-template-coloumns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas:
   "header header header"
   "main1 main2 main3";
