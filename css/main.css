@@ -21,6 +21,8 @@ body {
 
 header {
   grid-area: header;
+  background-color: lightblue;
+  padding: 1rem;
 }
 
 header h1 {
@@ -32,6 +34,11 @@ header img {
   grid-template-columns: 1fr 1fr 1fr;
   grid-area: header;
   align-self: center;
+}
+
+main {
+  background-color: pink;
+  padding: 1rem;
 }
 
 .artemis {
