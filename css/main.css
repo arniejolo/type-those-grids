@@ -13,12 +13,10 @@ body {
 
   /* mobile size */
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-coloumns: 1fr 1fr 1fr;
   grid-template-areas:
-  "header"
-  "aside1"
-  "aside2"
-  "aside3";
+  "header header header"
+  "aside1 aside2 aside3";
 }
 
 header {
@@ -33,20 +31,17 @@ header h1 {
 
 main {
   background-color: pink;
-}
-
-.main-grid {
-  list-style-type: none;
   padding: 0;
 }
 
-.main-grid aside {
-  background-color: white;
+main aside {
+  gap: 1em;
 }
 
 .artemis {
   grid-area: aside1;
   padding: 1rem;
+  background-color: purple;
 }
 
 .rhodes {
@@ -57,13 +52,4 @@ main {
 .babylon {
   grid-area: aside3;
   padding: 1rem;
-}
-
-@media screen and (min-wdith: 40em) {
-
-body {
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-  "header header header"
-  "aside1 aside2 aside3";
 }
