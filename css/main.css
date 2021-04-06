@@ -7,49 +7,32 @@ html {
 *, *::before, *::after {
   box-sizing: inherit;
 }
-body {
-  padding: 0;
-  margin: 0;
 
-  /* mobile size */
+img {
+  width: 100%
+}
+
+main {
+
   display: grid;
   grid-template-coloumns: 1fr 1fr 1fr;
   grid-template-areas:
   "header header header"
-  "aside1 aside2 aside3";
+  "main1 main2 main3";
 }
 
-header {
+.helen {
   grid-area: header;
-  background-color: lightblue;
-  padding: 1rem;
-}
-
-header h1 {
-  font-weight: lighter;
-}
-
-main {
-  background-color: pink;
-  padding: 0;
-}
-
-main aside {
-  gap: 1em;
 }
 
 .artemis {
-  grid-area: aside1;
-  padding: 1rem;
-  background-color: purple;
+  grid-area: main1;
 }
 
 .rhodes {
-  grid-area: aside2;
-  padding: 1rem;
+  grid-area: main2;
 }
 
 .babylon {
-  grid-area: aside3;
-  padding: 1rem;
+  grid-area: main3;
 }
