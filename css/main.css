@@ -25,6 +25,11 @@ main {
   grid-area: header;
 }
 
+.banner-text {
+  grid-area: header:
+  alight-self: end;
+}
+
 .artemis {
   grid-area: main1;
 }
