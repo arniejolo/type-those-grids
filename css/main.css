@@ -68,16 +68,15 @@ dd {
   font-size: 1.5rem;
 }
 
-main h2 {
+h2 {
   font-style: italic;
   font-weight: normal;
   font-size: 1.5rem;
-  padding: 1rem;
-
+  margin: 0 0 1.5rem;
 }
 
 p {
   font-size: 1.5rem;
   font-weight: normal;
-
+  margin: 0 0 1.5rem;
 }
